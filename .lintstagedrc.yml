@@ -1,0 +1,3 @@
+'*':
+  - "rome check --apply"
+  - "rome format --write"

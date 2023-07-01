@@ -35,6 +35,6 @@
     "clientKind": "git"
   },
   "files": {
-    "ignore": [".yarn/**", "node_modules/**"]
+    "ignore": [".yarn/**", "node_modules/**", ".husky", "*.yml"]
   }
 }
