@@ -23,6 +23,8 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
-    "@yarnpkg/sdks": "^3.0.0-rc.47"
+    "@yarnpkg/sdks": "^3.0.0-rc.47",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.3"
   }
 }
