@@ -259,6 +259,7 @@ export function Canvas({
 
   useEffect(() => {
     function onResize(): void {
+      generateShapes()
       reset()
     }
 
