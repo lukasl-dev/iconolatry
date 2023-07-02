@@ -3,6 +3,7 @@ import { monokai } from "~/colors/presets/monokai"
 import { nordPolarNight } from "~/colors/presets/nord_polar_night"
 import { nordAurora } from "~/colors/presets/nord_aurora"
 import { nordSnowStorm } from "~/colors/presets/nord_snow_storm"
+import { catppuccinLatte } from "~/colors/presets/catppuccin_latte"
 
 /**
  * An array of the color palette names.
@@ -12,6 +13,7 @@ export const colorPaletteNames = [
   "nord-polar-night",
   "nord-aurora",
   "nord-snow-storm",
+  "catppuccin-latte",
 ] as const
 
 /**
@@ -37,4 +39,5 @@ export const colorPalettes: Record<ColorPaletteName, ColorPalette> = {
   "nord-polar-night": nordPolarNight,
   "nord-aurora": nordAurora,
   "nord-snow-storm": nordSnowStorm,
+  "catppuccin-latte": catppuccinLatte,
 }
