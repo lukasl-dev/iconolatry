@@ -24,7 +24,7 @@
   },
   "javascript": {
     "formatter": {
-      "quoteStyle": "single",
+      "quoteStyle": "double",
       "quoteProperties": "asNeeded",
       "trailingComma": "all",
       "semicolons": "asNeeded"
@@ -35,6 +35,6 @@
     "clientKind": "git"
   },
   "files": {
-    "ignore": [".yarn/**", "node_modules/**", ".husky", "*.yml"]
+    "ignore": [".yarn/**", "node_modules/**", ".husky", ".next/**", "*.yml"]
   }
 }

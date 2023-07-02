@@ -1804,6 +1804,8 @@ __metadata:
     clsx: ^1.2.1
     husky: ^8.0.3
     lint-staged: ^13.2.3
+    lucide-react: ^0.257.0
+    lucide-static: ^0.257.0
     next: 13.4.7
     postcss: 8.4.24
     react: 18.2.0
@@ -2214,6 +2216,22 @@ __metadata:
   version: 10.0.0
   resolution: "lru-cache@npm:10.0.0"
   checksum: 18f101675fe283bc09cda0ef1e3cc83781aeb8373b439f086f758d1d91b28730950db785999cd060d3c825a8571c03073e8c14512b6655af2188d623031baf50
+  languageName: node
+  linkType: hard
+
+"lucide-react@npm:^0.257.0":
+  version: 0.257.0
+  resolution: "lucide-react@npm:0.257.0"
+  peerDependencies:
+    react: ^16.5.1 || ^17.0.0 || ^18.0.0
+  checksum: b3ce7c5a9752646221353f71293ddb839a82c11abd6564082aec40891f496f390d50e330956bc1f1d6f2fc9f9baff8a6a69af2ff52cf094b62d99c5886d3ab52
+  languageName: node
+  linkType: hard
+
+"lucide-static@npm:^0.257.0":
+  version: 0.257.0
+  resolution: "lucide-static@npm:0.257.0"
+  checksum: 5765a8cbf87287b6bf3c02cd19470d9841237c34f076f408b8f9b51af5ba6c851cc7282127c2bad098e19d63ecf22cbd8b786b22dfe3c7f4e0b727b2b2a8480c
   languageName: node
   linkType: hard
 

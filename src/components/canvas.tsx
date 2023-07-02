@@ -42,6 +42,11 @@ export type CanvasProps = {
   icons: Icon[]
 
   /**
+   * The color distribution of the shapes.
+   */
+  colorDistribution?: WallpaperShapeColorDistribution
+
+  /**
    * The disortion factor of every second row.
    */
   disortion?: number
@@ -87,6 +92,13 @@ type CanvasShape = {
 export function Canvas({
   colors,
   icons,
+  colorDistribution = {
+    primary: 0.1,
+    secondary: 0.1,
+    tertiary: 0.4,
+    quaternary: 0.1,
+    hidden: 0.3,
+  },
   disortion = 2.25,
   radius = 20,
   gap = 3.8 * radius,
@@ -152,23 +164,23 @@ export function Canvas({
     return choice<{ value: ColorPaletteShape | undefined }>([
       {
         value: primary[Math.floor(Math.random() * primary.length)],
-        probability: 0.1,
+        probability: colorDistribution.primary,
       },
       {
         value: secondary[Math.floor(Math.random() * secondary.length)],
-        probability: 0.1,
+        probability: colorDistribution.secondary,
       },
       {
         value: tertiary[Math.floor(Math.random() * tertiary.length)],
-        probability: 0.4,
+        probability: colorDistribution.tertiary,
       },
       {
         value: quaternary[Math.floor(Math.random() * quaternary.length)],
-        probability: 0.1,
+        probability: colorDistribution.quaternary,
       },
       {
         value: undefined,
-        probability: 0.3,
+        probability: colorDistribution.hidden,
       },
     ]).value
   }
