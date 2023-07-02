@@ -20,6 +20,28 @@ type PageProps = {
   }
 }
 
+// The default icon names to use when no icons are specified.
+const defaultIcons = [
+  "lucide-citrus",
+  "lucide-alert-circle",
+  "lucide-book",
+  "lucide-box",
+  "lucide-cherry",
+  "lucide-circuit-board",
+  "lucide-cloud",
+  "lucide-diamond",
+  "lucide-fan",
+  "lucide-fish",
+  "lucide-flower",
+  "lucide-grape",
+  "lucide-globe",
+  "lucide-magnet",
+  "lucide-magnet",
+  "lucide-send",
+  "lucide-smile",
+  "lucide-test-tube-2",
+]
+
 export default async function Page({
   params,
   searchParams,
@@ -28,8 +50,7 @@ export default async function Page({
     throw new Error(`Unknown color palette: ${params.palette}`)
   }
 
-  const iconNames = searchParams.icons?.split(",") || []
-
+  const iconNames = searchParams.icons?.split(",") || defaultIcons
   const icons = await Promise.all(
     iconNames.map(async (name): Promise<Icon> => {
       const loader = iconLoaders.find((loader) =>
