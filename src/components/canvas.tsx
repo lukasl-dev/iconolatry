@@ -1,3 +1,5 @@
+"use client"
+
 import { ReactElement, useEffect, useRef, useState } from "react"
 import { ColorPalette, ColorPaletteShape, extractColor } from "~/colors"
 import { Icon, extractIconSource } from "~/icons"
