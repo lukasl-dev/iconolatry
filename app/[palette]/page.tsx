@@ -36,7 +36,6 @@ const defaultIcons = [
   "lucide-grape",
   "lucide-globe",
   "lucide-magnet",
-  "lucide-magnet",
   "lucide-send",
   "lucide-smile",
   "lucide-test-tube-2",
