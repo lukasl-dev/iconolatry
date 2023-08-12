@@ -6,7 +6,7 @@ import {
 } from "~/colors/presets"
 import { Icon } from "~/icons"
 import { Canvas } from "~/components"
-import { iconLoaders } from "../../src/icons/loaders"
+import { iconLoaders } from "~/icons/loaders"
 
 type PageProps = {
   params: {
@@ -35,7 +35,6 @@ const defaultIcons = [
   "lucide-flower",
   "lucide-grape",
   "lucide-globe",
-  "lucide-magnet",
   "lucide-magnet",
   "lucide-send",
   "lucide-smile",
